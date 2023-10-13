@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-checkout.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header id="header-placeholder"></header>
+
+    <div class="container">
+        <div id="breadcrumb"></div>
+
+        <div class="wrapper">
+
+            <!-- ADDRESSS -->
+            <div class="address-container">
+                <h2>Address</h2>
+                <form>
+                    <input type="text" id="first_name" name="first_name" placeholder="First Name*" required>
+                    <input type="text" id="last_name" name="last_name" placeholder="Last Name*" required>
+                    <input type="email" id="email" name="email" placeholder="E-Mail">
+                    <div class="pc-location">
+                        <input type="text" id="post_code" name="post_code" placeholder="Post Code*" required>
+                        <input type="text" id="location" name="location" placeholder="Location*" required>
+                    </div>
+                    <input type="text" id="phone_number" name="phone_number" placeholder="Phone Number">
+                </form>
+            </div>
+            
+            <!-- CHECKOUT -->
+            <div class="checkout-detail">     
+                <!-- PRODUCT -->
+                <div class="product-detail">
+                    <!-- IMG -->
+                    <div class="img-container">
+                        <img id="product-img" src="aset/somethinc_holyshield1.png" alt="product image">
+                    </div>
+                    
+                    <!-- NAME, PRICE, QUANTITY -->
+                    <div class="detail-container">
+                        <h2 id="product-name">Holyshield! UV Watery Sunscreen Gel SPF 50+ PA++++</h2>
+                        <h3 id="product-price">Rp 125.000</h3>
+    
+                        <div class="quantity-container">
+                            <div class="quantity-btn" id="subtract">-</div>
+                            <input type="number" id="quantity" value="0" min="0">
+                            <div class="quantity-btn" id="add">+</div>
+                        </div>
+                    </div>                   
+                </div>
+
+                <!-- SHIPPING, COURIER, & Payment -->
+                <div class="shipping-courier-payment">
+                    <div class="shipping-courier">
+                        <div class="shipping">
+                            <h4>Shipping</h4>
+                            <select name="courier" id="shipping-id">
+                                <option disabled selected value="">Pilih metode pengiriman</option>
+                                <option value="reguler">Reguler</option>
+                                <option value="ekspedisi">Ekspedisi</option>
+                            </select>
+                        </div>
+                        <div class="courier">
+                            <h4>Courier</h4>
+                            <select name="courier" id="courier-id">
+                                <option disabled selected value="">Pilih kurir</option>
+                                <option value="JNE">JNE</option>
+                                <option value="si lambat">Si Lambat</option>
+                                <option value="pos">Pos</option>
+                            </select>
+                            <p id="estimate">Estimate 4-7 June</p>
+                        </div>               
+                    </div>
+    
+                    <!-- PAYMENT -->
+                    <div class="payment-method">
+                        <img src="aset/Logo.png" alt="logo bank" id="bank-logo">
+                        <select name="payment" id="payment-id" onchange="changeImage()">
+                          <option disabled selected value="">Pilih metode pengiriman</option>
+                          <option value="mandiri">Mandiri Virtual Account</option>
+                          <option value="BCA">BCA Virtual Account</option>
+                          <option value="BSI">BSI Virtual Account</option>
+                          <option value="BNI">BNI Virtual Account</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- REDEEM -->
+                <div class="redeem">
+                    <form action="" class="redeem-form">
+                        <input type="text" id="redeem_code" name="redeem_code" placeholder="Promo Code">
+                    </form>
+                    <button class="redeem-btn">Redeem</button>
+                </div>
+
+                <!-- TOTAL PRICE -->
+                <div class="total-price-container">
+                    <div class="detail-price">
+                        <div class="subtotal">
+                            <p>Subtotal</p>
+                            <p>Rp 125.000</p>
+                        </div>
+                        <div class="shipment-price">
+                            <p>shipment</p>
+                            <p>Rp 25.000</p>
+                        </div>
+                    </div>
+
+                    <div class="total-price">
+                        <p>Total</p>
+                        <p>Rp 150.000</p>
+                    </div>
+
+                    <div class="buy">
+                        <img src="aset/protection_icon.png" alt="protection icon">
+                        <button class="buy-btn" id="buy-btn">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer-placeholder"></footer>
+
+    <!-- SCRIPT -->
+    <script type="module" src="checkout.js"></script>
+    <script src="retrieve-header.js"></script>
+    <script src="retrieve-footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-homepage.css">
+    <title>Home</title>
+</head>
+<body>
+    
+    <!----------------------- HEADER ------------------------->
+    <header id="header-placeholder"></header>
+
+
+    <!------------------ CONTENT ------------------->
+
+    <!-- SEARCH BAR -->
+    <div class="search-bar">
+        <div class="logo">
+            <img src="aset/logo.png" alt="logo">
+            <h1>REEAS</h1>
+        </div>
+        
+        <form id="searchForm">
+            <div class="search-container">
+              <div class="search-icon" id="searchIcon">
+                <img src="aset/search_icon.png" alt="search-icon">
+              </div>
+              <input type="text" id="searchInput" placeholder="search">
+            </div>
+        </form>
+
+        <div class="cart-wishlist-profile">
+            <img id="toCartPage" src="aset/cart_icon2.png" alt="cart icon">
+            <img id="toWishlistPage" src="aset/wishlist_icon2.png" alt="wishlist icon">
+            <img id="toProfilePage" src="aset/profile_icon2.png" alt="profil icon">
+        </div>
+        
+    </div>
+    
+
+    <!---- IMAGE SLIDER ---->
+    <div class="slider-container">
+        <div id="prev_btn" class="arrow"><img src="aset/prev_btn.png" alt="prev_btn"></div>
+        <div class="slide slide1"><img class="ads" src="aset/img_slider1.png" alt="ads-img"></div>
+        <div class="slide slide2"><img class="ads" src="aset/barenbliss_eye_product_1.png" alt="ads-img"></div>
+        <div class="slide slide3"><img class="ads" src="aset/barenbliss_skin_face_2.png" alt="ads-img"></div>
+        <div id="next_btn" class="arrow"><img src="aset/next_btn.png" alt="next_btn"></div>
+    </div>
+
+      
+    <!---- FLASH SALE ---->
+    <div class="fs-font">
+        <h2>FLASH SALE</h2>
+    </div>
+
+    <div class="fs-container">
+        <div class="fs-brand-name">
+            <h3>BARENBLISS <span style="font-size: 40px; color: #F7F7F7;">SALE</span></h3>
+        </div>
+
+        <div class="fs-content" id="fs-content">
+            <img class="fs-line" src="aset/v_line.png" alt="decorative line">
+            <!-- FS PRODUCT GOES HERE -->
+        </div>
+    </div>
+
+    <!--------------- SELECT BEST FOR YOU ---------------->
+    <div class="select-recommendation">
+        <h2>CHOOSE THE BEST OF YOU</h2>
+
+        <div class="rec-container">
+            <div class="select-men-women">
+                <div class="select-men">
+                  <img id="select-men-img" src="aset/man_img.png" alt="man-img">
+                  <h3>men</h3>
+                </div>
+                <div class="select-women">
+                  <img id="select-women-img" src="aset/woman_img.png" alt="woman-img">
+                  <h3>women</h3>
+                </div>
+            </div>
+
+
+            <div class="select-option">
+                <form action="">
+                    <div class="opt-wrap1">
+                        <div class="select-wrapper">
+                            <select name="age" id="age">
+                              <option value="" disabled selected style="font-weight: bold;">Age</option>
+                              <option value="&lt;18">&lt; 18</option>
+                              <option value="18-40">18-40</option>
+                              <option value="&gt;40">&gt; 40</option>
+                            </select>
+                          </div>
+                          <div class="select-wrapper">
+                            <select name="skin-type" id="skin-type">
+                              <option value="" disabled selected style="font-weight: bold;">Skin type</option>
+                              <option value="Dry">Dry</option>
+                              <option value="Oily">Oily</option>
+                            </select>
+                          </div>
+                    </div>
+                    <div class="opt-wrap2">
+                      <div class="select-wrapper">
+                        <select name="skin-problem" id="skin-problem">
+                          <option value="" disabled selected style="font-weight: bold;">Any skin problem?</option>
+                          <option value="Acne">Acne</option>
+                          <option value="Dark Spots">Dark Spots</option>
+                        </select>
+                      </div>
+                      <div class="select-wrapper">
+                        <select name="type-product" id="type-product">
+                          <option value="" disabled selected style="font-weight: bold;">Type of product</option>
+                          <option value="Cleanser">Cleanser</option>
+                          <option value="Toner">Toner</option>
+                        </select>
+                      </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--------------- PRODUCT RECCOMENDATION ---------------->
+
+    <div class="rec">
+    <!-------------------- FOR YOU ------------------->
+            <h2>FOR YOU</h2>
+            <div class="rec-content">
+                <!-- RECCOMENDATION GOES HERE -->
+            </div>
+
+        
+    <!----------------- MEN's STATION ------------->
+            <h2>MEN's STATION</h2>
+            <div class="rec-content-man">
+                <!-- MAN RECCOMENDATION GOES HERE -->
+            </div>
+    </div>
+
+
+    <!------------------- FOOTER --------------->
+    <footer id="footer-placeholder"></footer>
+
+    
+    <!-- SCRIPT -->
+    <script src="retrieve-header.js"></script>
+    <script src="retrieve-footer.js"></script>
+    <script src="search.js"></script>
+    <script src="img-slider.js"></script>
+    <script src="flash-sale.js"></script>
+    <script type="module" src="rec-for-you.js"></script>
+    <script type="module" src="rec-for-you-man.js"></script>
+    <script>
+      const toCartPage = document.getElementById("toCartPage");
+      const toWishlistPage = document.getElementById("toWishlistPage");
+      const toProfilePage = document.getElementById("toProfilePage");
+
+      toCartPage.addEventListener('click', () => {
+        window.location.href = 'cart.html';
+      });
+
+      toWishlistPage.addEventListener('click', () => {
+        window.location.href = 'wishlist.html';
+      });
+
+      toProfilePage.addEventListener('click', () => {
+        window.location.href = 'profile.html';
+      });
+    </script>
+
+</body>
+</html>

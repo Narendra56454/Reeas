@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #40513B;
+    padding-top: 17px;
+    z-index: 99;
+  }
+  
+  header h2 {
+    position: relative;
+    bottom: 7px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #EEEEEE;
+  }
+  
+  nav {
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      background-color: #F7F7F7
+  }
+  
+  nav ul {
+      display: flex;
+      width: 35%;
+      justify-content: space-around;
+      list-style-type: none;
+  }
+  
+  nav ul li a, nav ul li div {
+      color: #000000;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.025em;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  nav ul li img {
+    position: relative;
+    bottom: 9px;
+    left: 66.3px;
+  }
+
+  .brands-section {
+    display: none;
+    position: absolute;
+    top: 6rem;
+    left: 25.8rem;
+    width: 15vw;
+    text-indent: 1rem;
+    line-height: 1.5rem;
+    background-color: #ffff;
+  }
+
+  .categories-section {
+    display: none;
+    position: absolute;
+    top: 6rem;
+    left: 31rem;
+    width: 15vw;
+    text-indent: 1rem;
+    line-height: 1.5rem;
+    background-color: #ffff;
+  }
+
+  .brands-section p:hover, .categories-section p:hover {
+    outline: 2px solid #000000;
+  }
+

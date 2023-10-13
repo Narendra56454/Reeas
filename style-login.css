@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* -------------- CONTENT ---------------- */
+
+.container {
+  width: 35vw;
+  margin-top: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container h2 {
+  font-size: 2.2em;
+}
+
+.container p {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.container p a {
+  text-decoration: none;
+  color: #658864;
+}
+
+.container label {
+  display: block;
+  margin: 9px 0;
+  font-size: 1.2em;
+}
+
+label.required::after {
+  content: "*";
+  color: red;
+  margin-bottom: 20px;
+  font-size: 0.8em;
+  position: relative;
+  top: -0.2em;
+}
+
+input {
+  width: 34.5vw;
+  height: 6vh;
+  text-indent: 10px;
+  border-color: #DDDDDD;
+  border-style: solid;
+  border-radius: 8px;
+}
+
+.error-message {
+  display: none;
+  color: red;
+  font-size: 0.8em;
+}
+
+button {
+  cursor: pointer;
+}
+
+#submit-btn {
+  font-size: 1.2em;
+}
+
+form button {
+  width: 34.5vw;
+  height: 7vh;
+  margin-top: 10px;
+  color: #ffffff;
+  background-color: #609966;
+  border: none;
+  border-radius: 8px;
+}
+
+.alt-login button {
+  width: 17vw;
+  height: 7vh;
+  margin: 10px 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #DDDDDD;
+}
+
+.alt-login button img {
+  width: 26px;
+  height: 26px;
+}
+
+.alt-login button span {
+  position: relative;
+  bottom: 6px;
+  left: 4px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.alt-login::after {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 2px;
+  background-color: #EEEEEE;
+  margin: 10px auto;
+}

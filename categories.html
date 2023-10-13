@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <link rel="stylesheet" href="style-categories.css">
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header-placeholder"></header>
+
+    <!---------------- CONTENT ------------------>
+
+    <div class="search-results">
+        <div id="breadcrumb"></div>
+
+        <div class="wrapper">
+
+            <!-- FILTER -->
+            <div id="filter">
+                <h2>Filter</h2>
+
+                <section class="filter-section">
+            <h3>Penawaran</h3>
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" name="cashback"> Cashback
+              </label>
+              <label>
+                <input type="checkbox" name="diskon"> Diskon
+              </label>
+              <label>
+                <input type="checkbox" name="harga-grosir"> Harga Grosir
+              </label>
+            </div>
+                </section>
+
+                <section class="filter-section">
+            <h3>Stok</h3>
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" name="preorder"> Preorder
+              </label>
+              <label>
+                <input type="checkbox" name="tersedia"> Tersedia
+              </label>
+              <label>
+                <input type="checkbox" name="tidak-tersedia"> Tidak Tersedia
+              </label>
+            </div>
+                </section> 
+
+            </div>
+
+            <!-- SORTING, PRODUCT LIST -->
+            <div class="ksp">         
+                <div class="sorting">
+                    <h3>sort</h3>
+                    <form action="">
+                        <select name="sort" id="sort">
+                            <option disabled selected value=""></option>
+                            <option value="asc">Ascending</option>
+                            <option value="des">Descending</option>
+                        </select>
+                    </form>
+                </div>
+
+                <!-- PRODUCT LIST -->
+                <div id="productList">
+                <!-- LIST OF PRODUCT HERE -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- footer -->
+    <footer id="footer-placeholder"></footer>
+  
+    <!-- script -->
+    <script src="retrieve-header.js"></script>
+    <script src="retrieve-footer.js"></script>
+    <script type="module" src="categories.js"></script>
+    
+  </body>
+</html>

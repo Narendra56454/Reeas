@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-product_detail.css">
+    <title>Product Detail</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header id="header-placeholder"></header>
+
+    <div class="container">
+        <div id="breadcrumb"></div>
+        <div class="product-container">
+            <!-- DISPLAY IMAGE -->
+            <div class="product-img">
+                <div class="thumbnail-container">
+                    <img src="" alt="somethinc holyshield image" id="thumb-img" class="thumbnail">
+                    <img src="aset/somethinc_holyshield2.png" alt="somethinc holyshield image" class="thumbnail">
+                    <img src="aset/somethinc_holyshield3.png" alt="somethinc holyshield image" class="thumbnail">
+                    <img src="aset/somethinc_holyshield4.png" alt="somethinc holyshield image" class="thumbnail">
+                </div>
+                <div class="img-view-container">
+                    <img src="" alt="somethinc holyshield image" id="img-view">
+                </div>
+            </div>
+    
+            <!-- PRODUCT INFO -->
+            <div class="product-detail">
+                <h2 id="product-name"></h2>
+                <div class="product-desc">
+                    <p id="desc"></p>
+                    <p id="hashtag"></p>
+                </div>
+                <h3 id="price"></h3>
+    
+                <!-- RATING -->
+                <div class="rating">
+                    <span class="star-container">
+                      <span class="star"></span>
+                      <span class="star"></span>
+                      <span class="star"></span>
+                      <span class="star"></span>
+                      <span class="star"></span>
+                    </span>
+                </div> 
+    
+                <!-- BUY BUTTON -->
+                <div class="quantity-buy-container">
+                    <div class="quantity-container">
+                        <div class="quantity-btn" id="subtract">-</div>
+                        <input type="number" id="quantity" value="0" min="0">
+                        <div class="quantity-btn" id="add">+</div>
+                    </div>
+    
+                    <div id="buy-btn" class="buy-btn">
+                        <button>BUY</button>
+                    </div>
+                </div>
+    
+                <!-- ADD TO WISLIST AND CART -->
+                <div class="wish-cart">
+                    <div class="wish">
+                        <img id="wishlist" src="aset/wishlist_icon.png" alt="wishlist icon">
+                        <p>add to wishlist</p>
+                    </div>
+                    <div class="cart">
+                        <img src="aset/cart_icon.png" alt="cart icon">
+                        <p>add to cart</p>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+        <!---------- RELATED PRODUCT -------->
+        <div class="related-product">
+            <div class="seperater">
+                <h3>Related Product</h3>
+            </div>
+            <div id="product-that-related">
+
+            </div>
+        </div>
+
+
+        <!------------- REVIEW -------------->
+        <div class="review-container">
+            <div class="seperater">
+                <h3>Review</h3>
+            </div>
+            <div class="relevan-txt">
+                <p>Review ditampilkan sesuai relevansi</p>
+                <p>see more (32)</p>
+            </div>
+            <div class="relevan-review">
+                <div class="review"></div>
+                <div class="review"></div>
+            </div>    
+        </div>
+
+        <div class="all-review">
+            <h3>All Reviews</h3>
+            <div class="all-reviews-container">
+                <div class="real-reviews-container">
+
+                    <div class="review2"></div>
+                    <div class="review2"></div>
+                    <div class="review2"></div>
+                    <div class="review2"></div>
+
+                    <button class="see-all-btn">see all</button>
+                </div>
+
+                <img class="promotion-img" src="aset/img_slider1.png" alt="iklan">
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer id="footer-placeholder"></footer>
+
+    <!-- SCRIPT -->
+    <script src="retrieve-header.js"></script>
+    <script src="retrieve-footer.js"></script>
+    <script type="module" src="product_detail.js"></script>
+    <script src="review-generator1.js"></script>
+    <script src="review-generator2.js"></script>
+    <!-- <script type="module" src="breadcrumb.js"></script> -->
+</body>
+</html>
